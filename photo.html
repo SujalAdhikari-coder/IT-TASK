@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout</title>
+    <style>
+        .bordered {
+            border: 5px solid black;
+        }
+        .resized {
+            width: 100px;
+            height: 100px;
+        }
+        .left-aligned {
+            float: left;
+            margin-right: 10px;
+        }
+        .right-aligned {
+            float: right;
+            margin-left: 10px;
+        }
+        .spaced {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Layout Example</h1>
+    
+    <div>
+        <img src="image1.jpg" alt="Image 1" class="bordered">
+        <p>Text aligned with image1.jpg. This image has a 5px border around it.</p>
+    </div>
+    
+    <div>
+        <a href="image2.jpg">
+            <img src="image2.jpg" alt="Image 2" class="resized">
+        </a>
+        <p>Text aligned with image2.jpg. This image is resized to 100x100 pixels. Clicking the image will open the original image.</p>
+    </div>
+    
+    <div>
+        <img src="image3.jpg" alt="Image 3" class="left-aligned">
+        <p>Text aligned with image3.jpg. This image is aligned to the left side.</p>
+    </div>
+    
+    <div>
+        <img src="image4.jpg" alt="Image 4" class="spaced">
+        <p>Text aligned with image4.png. This image has a space of 50px horizontally and vertically around it.</p>
+    </div>
+    
+    <div style="clear: both;"></div>
+    
+    <p>Additional content to show the alignment and spacing effects with respect to the images.</p>
+</body>
+</html>
