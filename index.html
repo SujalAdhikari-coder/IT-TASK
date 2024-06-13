@@ -3,91 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Tasks Portfolio</title>
+    <title>Image Layout</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        .bordered {
+            border: 5px solid black;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+        .resized {
+            width: 100px;
+            height: 100px;
         }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .left-aligned {
+            float: left;
+            margin-right: 10px;
         }
-        h1 {
-            color: #fff;
-            margin: 0;
+        .right-aligned {
+            float: right;
+            margin-left: 10px;
         }
-        h2 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-        a {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 15px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #555;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .spaced {
+            margin: 50px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>IT Tasks Portfolio</h1>
-    </header>
-    <main>
-        <h2>Welcome To My Portfolio Website</h2>
-        <hr>
-        <p><strong>Week 4</strong></p>
-        <p>This is my HTML weekly task portfolio website. Our weekly tasks started from week 4 onward. Click on the following links to check out the weekly tasks:</p>
-        <a href="E:\IT\PORTFOLIO\TASKS\week4\week4.html" target="_blank">Week 4</a>
-    </main>
-    <main>
-        <p><strong>Week 5</strong></p>
-        <p>This is my HTML weekly task portfolio of Week 5 </p>
-        <a href="E:\IT\PORTFOLIO\TASKS\week5\exercise.html" target="_blank"> week 5</a>
-    </main>
-    <main>
-        <p><strong>week 6</strong></p>
-        <p>This is my HTML weekly task portfolio of Week 6</p>
-        <a href="E:\IT\PORTFOLIO\TASKS\week6\index.html" target="_blank">exercise 1</a>
-        <a href="E:\IT\PORTFOLIO\TASKS\week6\home.html" target="_blank">exercise 2</a>
-        <a href="E:\IT\PORTFOLIO\TASKS\week6\exercise3.html" target="_blank"> exercise 3</a>
-    </main>
-    <main>
-        <p><strong>week 7</strong></p>
-        <p>This is my HTML weekly task portfolio of Week 7</p>
-        <a href="E:\IT\PORTFOLIO\TASKS\week7\htmlform.html"> week 7</a>
-    </main>
-    <footer>
-        &copy; 2024 IT Tasks Portfolio
-    </footer>
+    <h1>Image Layout Example</h1>
+    
+    <div>
+        <img src="image1.jpg" alt="Image 1" class="bordered">
+        <p>Text aligned with image1.jpg. This image has a 5px border around it.</p>
+    </div>
+    
+    <div>
+        <a href="image2.jpg">
+            <img src="image2.jpg" alt="Image 2" class="resized">
+        </a>
+        <p>Text aligned with image2.jpg. This image is resized to 100x100 pixels. Clicking the image will open the original image.</p>
+    </div>
+    
+    <div>
+        <img src="image3.jpg" alt="Image 3" class="left-aligned">
+        <p>Text aligned with image3.jpg. This image is aligned to the left side.</p>
+    </div>
+    
+    <div>
+        <img src="image4.jpg" alt="Image 4" class="spaced">
+        <p>Text aligned with image4.png. This image has a space of 50px horizontally and vertically around it.</p>
+    </div>
+    
+    <div style="clear: both;"></div>
+    
+    <p>Additional content to show the alignment and spacing effects with respect to the images.</p>
 </body>
 </html>
