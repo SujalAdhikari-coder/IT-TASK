@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE YOUR CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-label {
+            margin-right: 20px;
+        }
+        input[type="button"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"]:hover {
+            background-color: #e41e1e;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h1>ENTER YOUR DETAILS</h1>
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your first name">
+        
+        <label for="cast">Last Name</label>
+        <input type="text" name="cast" id="cast" placeholder="Enter your last name">
+        
+        <label for="age">Enter Your Age</label>
+        <input type="number" name="age" id="age" placeholder="Your age">
+        
+        <h3>GENDER</h3>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male" class="radio-label">Male</label>
+            
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female" class="radio-label">Female</label>
+        </div>
+        
+        <label for="birth">Enter your date of birth</label>
+        <input type="date" name="birth" id="birth">
+        
+        <label for="email">Enter your Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        
+        <label for="addr">Enter your address</label>
+        <input type="text" name="addr" id="addr" placeholder="Enter your full address">
+        
+        <label for="father">Enter your father's Name</label>
+        <input type="text" name="father" id="father" placeholder="Enter your father's name">
+        
+        <label for="mother">Enter your mother's Name</label>
+        <input type="text" name="mother" id="mother" placeholder="Enter your mother's name">
+        
+        <label for="place">Where are you from?</label>
+        <select name="my place" id="place">
+            <option value="1">Kathmandu</option>
+            <option value="2">Lalitpur</option>
+            <option value="3">Dhangadhi</option>
+        </select>
+        
+        <label for="text">Describe about yourself</label>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Describe about yourself"></textarea>
+        
+        <div>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
